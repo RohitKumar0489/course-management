@@ -1,0 +1,55 @@
+/* Styling for the entire App */
+.App {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #4A90E2;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Welcome message and logout button */
+.welcome-msg {
+  font-size: 1.2em;
+  margin-right: 10px;
+  color: #4A4A4A;
+}
+
+.logout-button {
+  background-color: #FF6347;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #E5533D;
+}
+
+/* Heading styling */
+.welcome-heading {
+  color: #4A90E2;
+  margin-top: 50px;
+}

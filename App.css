@@ -1,0 +1,198 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+:root {
+  --primary-color: #ff6347;
+  --secondary-color: #28a745;
+  --background-gradient: linear-gradient(to right, #ff7e5f, #feb47b);
+  --form-bg: #f9f9f9;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--background-gradient);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Container */
+.App {
+  background-color: rgba(255, 255, 255, 0.95);
+  max-width: 700px;
+  padding: 40px;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  background: -webkit-linear-gradient(left, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3em;
+  transition: transform 0.3s, letter-spacing 0.2s;
+}
+
+h1:hover {
+  transform: scale(1.05);
+  letter-spacing: 2px;
+}
+
+h2 {
+  color: #444;
+  border-bottom: 2px solid #feb47b;
+  padding-bottom: 10px;
+}
+
+/* Input Fields */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1.1em;
+  transition: all 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(255, 126, 95, 0.5);
+  outline: none;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button.primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+button.primary:hover {
+  background-color: #e5533d;
+}
+
+button.secondary {
+  background-color: var(--secondary-color);
+}
+
+button.secondary:hover {
+  background-color: #218838;
+}
+
+button.logout {
+  background-color: #3498db;
+}
+
+button.logout:hover {
+  background-color: #2980b9;
+}
+
+/* Course List */
+.course-list {
+  margin-top: 20px;
+}
+
+.course-item {
+  background-color: var(--form-bg);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.course-item:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.delete-button {
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.delete-button:hover {
+  background-color: #e5533d;
+}
+
+/* Forms */
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+/* Add Course Form */
+.add-course-form {
+  margin: 20px 0;
+  background-color: var(--form-bg);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Navigation */
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #e5533d;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .App {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  nav a {
+    font-size: 1em;
+  }
+}
